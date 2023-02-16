@@ -1,7 +1,7 @@
 {
   "name": "jabbigalang.github.io",
   "version": "0.1.0",
-  "homepage": "https://jabbigalang.github.io/jabbigalang.github.io",
+  "homepage": "https://jabbigalang.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
