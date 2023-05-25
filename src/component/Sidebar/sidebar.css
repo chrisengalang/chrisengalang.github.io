@@ -14,9 +14,79 @@
 }
 
 .profile {
-    height: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-picture-container {
+    margin: 50px auto auto;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius: 50%;
+}
+
+.profile-picture-container > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-description > h2 {
+    font-weight: normal;
+    color: white;
+    font-size: 1.5em;
+}
+
+.profile-description > h3 {
+    font-weight: lighter;
+    color: white;
+    font-size: 1.2em;
 }
 
 .navigation {
-    height: 50%;
+    padding: 1em;
+    color: white;
+}
+
+.navigation > ul {
+    list-style: none;
+}
+
+.navigation > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation > ul > li {
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+.navigation > ul > li:hover {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.online-links {
+    display: flex;
+    gap: 1em;
+}
+
+.online-link {
+    width: 25px;
+    height: 25px;
+}
+
+.online-link > img {
+    width: 25px;
+    height: auto;
+    filter: invert(1);
+}
+
+.footer {
+    padding: 3em;
+    color: white;
 }
