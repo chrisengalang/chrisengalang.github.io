@@ -7,7 +7,7 @@
 }
 
 .home {
-    height: 50vh;
+    height: 53vh;
     background-image: linear-gradient(to top right, #0D0D0D, #333333, #4D4D4D);
 }
 
@@ -15,22 +15,21 @@
     color: white;
     width: 80%;
     margin: auto;
-    padding: 1em 0 1em 0;
+    padding: 2em 0 2em 0;
 }
 
 .navigation > nav > ul {
     display: flex;
     flex-direction: row;
     column-gap: 3em;
-
     justify-content: flex-end;
-
     list-style: none;
+    margin-right: 3em;
 }
 
 .navigation > nav > ul > li {
     height: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .tron {
@@ -42,9 +41,17 @@
     color: white;
 }
 
+.tron:hover {
+    .tron-left > img {
+        filter: grayscale(0);
+    }
+}
+
 .tron-left > img {
     height: 400px;
     width: auto;
+    filter: grayscale(100%);
+    transition: all 1s ease;
 }
 
 .tron-right {
