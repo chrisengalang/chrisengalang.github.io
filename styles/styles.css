@@ -34,7 +34,7 @@
 .tron {
     display: flex;
 
-    width: 80%;
+    width: 80vw;
     margin: auto;
 
     color: white;
@@ -46,18 +46,26 @@
     }
 }
 
+.tron-left {
+    width: 30%;
+}
+
+.tron-right {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2em;
+}
+
+.tron-left {
+    text-align: right;
+}
+
 .tron-left > img {
     height: 25em;
     width: auto;
     filter: grayscale(100%);
     transition: all 1s ease;
-}
-
-.tron-right {
-    display: flex;
-    align-items: flex-end;
-
-    padding-bottom: 4em;
 }
 
 .tron-right-content > h2 {
