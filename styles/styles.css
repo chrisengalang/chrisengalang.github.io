@@ -40,12 +40,6 @@
     color: white;
 }
 
-.tron:hover {
-    .tron-left > img {
-        filter: grayscale(0);
-    }
-}
-
 .tron-left {
     width: 30%;
 }
@@ -64,8 +58,6 @@
 .tron-left > img {
     height: 25em;
     width: auto;
-    filter: grayscale(100%);
-    transition: all 1s ease;
 }
 
 .tron-right-content > h2 {
