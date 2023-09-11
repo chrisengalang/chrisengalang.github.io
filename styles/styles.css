@@ -7,7 +7,6 @@
 }
 
 .home {
-    height: 53vh;
     background-image: linear-gradient(to top right, #0D0D0D, #333333, #4D4D4D);
 }
 
@@ -48,7 +47,7 @@
 }
 
 .tron-left > img {
-    height: 400px;
+    height: 25em;
     width: auto;
     filter: grayscale(100%);
     transition: all 1s ease;
