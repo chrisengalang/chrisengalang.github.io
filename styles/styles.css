@@ -1,138 +1,33 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-    font-family: "Lato", sans-serif;
+    font-family: 'Roboto';
 }
 
-.home {
-    background-image: linear-gradient(to top right, #0D0D0D, #333333, #4D4D4D);
-}
-
-.navigation {
-    color: white;
-    width: 80%;
-    margin: auto;
-    padding: 2em 0 2em 0;
-}
-
-.navigation > nav > ul {
+.container {
     display: flex;
     flex-direction: row;
-    column-gap: 3em;
-    justify-content: flex-end;
-    list-style: none;
-    margin-right: 3em;
+    width: 100vw;
+    height: 100vh;
 }
 
-.navigation > nav > ul > li {
-    height: 100%;
-    font-size: 1.2em;
-}
-
-.tron {
-    display: flex;
-
-    width: 80vw;
-    margin: auto;
-
+.sidebar {
+    height: 100vh;
+    width: 20%;
+    background: #000;
     color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
-.tron-left {
-    width: 30%;
-}
-
-.tron-right {
+main {
     width: 80%;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 2em;
+    margin-left: 20%;
 }
 
-.tron-left {
-    text-align: right;
+main > section {
+    height: 100vh;
 }
-
-.tron-left > img {
-    height: 25em;
-    width: auto;
-}
-
-.tron-right-content > h2 {
-    font-size: 4em;
-}
-
-.tron-right-content > h3 {
-    font-size: 1.5em;
-}
-
-/*
-
-body {
-    height: 100%;
-    width: 100%;
-}
-
-.top-content {
-    background-image: linear-gradient(to right, #0D0D0D, #333333, #4D4D4D);
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-container {
-    color: white;
-    width: 80%;
-    margin: auto;
-    height: 20%;
-}
-
-.nav-container > nav > ul {
-    display: flex;
-
-    list-style: none;
-    column-gap: 30px;
-    height: 100%;
-}
-
-.nav-container > nav > ul > li {
-    font-size: 1.5em;
-}
-
-.home-container {
-    color: white;
-    width: 100%;
-}
-
-.jumbotron {
-    display: flex;
-    width: 80%;
-    color: white;
-    justify-content: center;
-    margin: auto;
-}
-
-.jumbotron-profile {
-    height: 600px;
-    width: auto;
-}
-
-.jumbotron-right {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 50px;
-}
-
-.jumbotron-right-content > h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.jumbotron-right-content > h2 {
-    font-size: 4em;
-    font-weight: bold;
-}
-*/
