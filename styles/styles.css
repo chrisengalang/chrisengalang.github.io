@@ -5,6 +5,9 @@
     font-family: 'Roboto';
     text-decoration: none;
     list-style: none;
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -16,7 +19,7 @@
 
 .sidebar {
     height: 100vh;
-    width: 20%;
+    width: 15%;
     background: #000;
     color: white;
     position: fixed;
@@ -26,15 +29,38 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    row-gap: 1em;
+    justify-content: flex-start;
+    row-gap: 1.5em;
 
-    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-frame {
+    background: url("/img/profile-2.jpeg");
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    background-size: cover;
+
+    border: .4em solid #818589;
+}
+
+.profile-frame:hover {
+    filter: none;
+    transition: 0.5s;
 }
 
 main {
-    width: 80%;
-    margin-left: 20%;
+    width: 85%;
+    margin-left: 15%;
 }
 
 main > section {
@@ -42,19 +68,31 @@ main > section {
 }
 
 .social-links > a > img {
-    max-width: 13%;
+    width: 2.3em;
     height: auto;
+}
+
+.social-links {
+    display: flex;
+    column-gap: 1em;
+    justify-content: center;
 }
 
 .circular-icon {
     background: rgb(100,100,100);
     border-radius: 50%;
     padding: 0.2em;
+    filter: grayscale();
 }
 
 .circular-icon:hover {
     background: rgb(100,100,300);
     transition: .5s;
+    filter: none;
+}
+
+nav {
+    padding-left: 2em;
 }
 
 nav > ul {
