@@ -44,7 +44,7 @@
 }
 
 .profile-frame {
-    background: url("/img/profile-2.jpeg");
+    background: url("/img/profile.jpeg");
     width: 12em;
     height: 12em;
     border-radius: 50%;
@@ -110,4 +110,37 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     color: white;
     transition: .5s;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home > div > h3 {
+    font-size: 2em;
+}
+
+#home > div > h1 {
+    font-size: 5em;
+}
+
+#role-text {
+    text-decoration: underline;
+    text-decoration-color: rgb(100,100,300);
+    border-right: 3px solid black;
+    animation: cursor 0.8s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: black;
+    }
+    100% {
+        border-color: white;
+    }
 }
