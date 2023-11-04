@@ -58,6 +58,11 @@ main > section {
     padding: 2em;
 }
 
+main > section:nth-child(3) {
+    background-color: rgba(100,100,300, 3%);
+}
+
+
 main > section > h2 {
     font-size: 2em;
 }
@@ -168,7 +173,7 @@ nav > ul > li > a:hover {
 
 .resume-item > h5 {
     padding: .5em;
-    background-color: rgba(100,100,300, 10%);
+    background-color: rgba(100,100,300, 15%);
     width: fit-content;
 }
 
