@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Open Sans';
 
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -47,13 +47,6 @@
     height: 12em;
     border-radius: 50%;
     background-size: cover;
-
-    border: .4em solid #818589;
-}
-
-.profile-frame:hover {
-    filter: none;
-    transition: 0.5s;
 }
 
 main {
@@ -62,7 +55,6 @@ main {
 }
 
 main > section {
-    height: 100vh;
     padding: 2em;
 }
 
@@ -84,7 +76,6 @@ main > section > h2 {
 .circular-icon {
     background: rgb(100,100,100);
     border-radius: 50%;
-    padding: 0.2em;
     filter: grayscale();
 }
 
@@ -102,8 +93,6 @@ nav > ul {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
-    list-style: none;
-
     align-items: start;
 }
 
@@ -121,6 +110,9 @@ nav > ul > li > a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(100,100,300);
+    color: white;
+    height: 100vh;
 }
 
 #home > div > h3 {
@@ -133,11 +125,12 @@ nav > ul > li > a:hover {
 
 #role-text {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
     text-underline-offset: 10px;
     text-decoration-color: rgb(100,100,300);
     border-right: 3px solid black;
-    animation: cursor 0.8s infinite;
+    animation: cursor 0.5s infinite;
+    padding-right: .1em;
 }
 
 @keyframes cursor {
@@ -155,6 +148,9 @@ nav > ul > li > a:hover {
 .resume-article-container > article {
     padding-top: 1em;
     padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: .8em;
 }
 
 .resume-article-container > article > h4, .resume-item > h4 {
@@ -163,12 +159,16 @@ nav > ul > li > a:hover {
 }
 
 .resume-item {
-    padding: 0.5em;
+    row-gap: .8em;
+    margin-top: 1em;
+    padding-right: 5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .resume-item > h5 {
     padding: .5em;
-    background-color: rgba(100,100,300, 50%);
+    background-color: rgba(100,100,300, 10%);
     width: fit-content;
 }
 
@@ -179,4 +179,11 @@ nav > ul > li > a:hover {
 .work-container {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.divider {
+    height: 3px;
+    width: 5em;
+    background: rgb(100,100,300);
+    margin-top: 1em
 }
