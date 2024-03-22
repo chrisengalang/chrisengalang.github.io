@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+.container { 
+  padding: 1em;
+}
+
+header {
+  font-family: 'JetBrains Mono', monospace;
+  padding: 0 0 1em 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation > h1 {
+  font-weight: 900;
+}
+
+.navigation-links {
+  margin: 0 auto;
+}
+
+.navigation-links > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2em;
+}
+
+.navigation-links > ul > li > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navigation-links > ul > li > a:hover {
+  color: white;
+}
+
+#home {
+
+}
