@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #000;
+  background-color: #36454f;
   color: white;
 }
 
@@ -14,8 +15,11 @@ body {
 }
 
 header {
-  font-family: 'JetBrains Mono', monospace;
   padding: 0 0 1em 0;
+}
+
+.font-jetbrains {
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .navigation {
@@ -36,6 +40,7 @@ header {
   display: flex;
   list-style-type: none;
   gap: 2em;
+  margin-right: 10em;
 }
 
 .navigation-links > ul > li > a {
@@ -47,6 +52,19 @@ header {
   color: white;
 }
 
-#home {
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.home-container > h1 {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 6em;
+}
+
+.home-container > h2 {
 
 }
