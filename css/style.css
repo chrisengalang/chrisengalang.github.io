@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #36454f;
+  background-color: black;
   color: white;
 }
 
@@ -15,11 +15,19 @@ body {
 }
 
 header {
-  padding: 0 0 1em 0;
+  backdrop-filter: blur(20px);
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .font-jetbrains {
   font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sarabun {
+  font-family: 'Sarabun', sans-serif;
 }
 
 .navigation {
@@ -45,7 +53,8 @@ header {
 
 .navigation-links > ul > li > a {
   text-decoration: none;
-  color: gray;
+  color: #16b868;
+  font-size: 1.2em;
 }
 
 .navigation-links > ul > li > a:hover {
@@ -65,6 +74,10 @@ header {
   font-size: 6em;
 }
 
-.home-container > h2 {
-
+.experience-container,
+.capabilities-container,
+.certifications-container,
+.portfolio-container {
+  height: 90vh;
+  padding-top: 5em;
 }
