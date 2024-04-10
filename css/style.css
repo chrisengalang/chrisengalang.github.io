@@ -1,83 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: none;
 }
 
-body {
-  background-color: black;
-  color: white;
-}
-
-.container { 
-  padding: 1em;
-}
-
-header {
-  backdrop-filter: blur(20px);
-  padding: 1em;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.font-jetbrains {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.font-sarabun {
-  font-family: 'Sarabun', sans-serif;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navigation > h1 {
-  font-weight: 900;
-}
-
-.navigation-links {
-  margin: 0 auto;
-}
-
-.navigation-links > ul {
-  display: flex;
-  list-style-type: none;
-  gap: 2em;
-  margin-right: 10em;
-}
-
-.navigation-links > ul > li > a {
+a {
   text-decoration: none;
-  color: #16b868;
-  font-size: 1.2em;
 }
 
-.navigation-links > ul > li > a:hover {
-  color: white;
-}
-
-.home-container {
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.home-container > h1 {
-  font-family: 'Sarabun', sans-serif;
-  font-size: 6em;
+.nav-logo {
+  max-width: 100px;
 }
 
-.experience-container,
-.capabilities-container,
-.certifications-container,
-.portfolio-container {
-  height: 90vh;
-  padding-top: 5em;
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+/* .link a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+} */
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  background: #1d4ed8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d40af;
 }
