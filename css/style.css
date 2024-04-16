@@ -104,3 +104,66 @@ header p {
   font-size: 1.2rem;
   font-family: 'Jetbrains Mono', monospace;
 }
+
+.exp-educ {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.experience {
+  position: relative;
+  width: 50%;
+}
+
+.experience h2 {
+  margin: 8px 25px;
+}
+
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card {
+  position: relative;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-left: 1px solid white;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  left: -10px;
+}
+
+.text {
+  padding: 1.5rem;
+  border: 1px solid #CC5500;
+  border-radius: 5px;
+}
+
+.text > .dates {
+  font-size: 16px;
+  color: #CC5500;
+}
+
+.text > .dates > i {
+  color: #CC5500;
+  margin-right: 8px;
+}
+
+.text h2, .text h3 {
+  margin: 8px 0;
+}
+
+.text > p {
+  font-size: 18px;
+  text-align: justify;
+}
