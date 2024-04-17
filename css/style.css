@@ -9,8 +9,8 @@
   font-family: 'Roboto', sans-serif;
   outline: none;
   border: none;
-  background: #222222;
-  color: white;
+  /* background: #222222;
+  color: white; */
 }
 
 html {
@@ -93,6 +93,7 @@ header {
   justify-content: space-between;
   text-align: center;
   gap: 1rem;
+  background: white;
 }
 
 header h1 {
@@ -110,14 +111,15 @@ header p {
 }
 
 .exp-educ {
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
   display: flex;
+  background: #222222;
+  color: white;
 }
 
 .experience {
   position: relative;
-  width: 50%;
 }
 
 .experience h2 {
