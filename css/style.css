@@ -25,12 +25,12 @@ html {
   letter-spacing: -3px;
 }
 
-.xp-card-container {
-  padding-left: 10rem;
-}
-
 .xp-card {
   position: relative;
+}
+
+.xp-card-container {
+  padding-left: 10rem;
 }
 
 .xp-card::before {
@@ -61,6 +61,32 @@ html {
 
 .xp-card:last-of-type::after {
   height: 50%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .xp-card-container {
+    padding-left: 0;
+  }
+
+  .xp-card::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    border-radius: 0;
+  }
+
+  .xp-card:last-of-type::before {
+    height: 0px;
+  }
+
+  .xp-card::after {
+    width: 0;
+    padding: 0;
+  }
 }
 
 #experience {
