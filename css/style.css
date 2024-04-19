@@ -25,6 +25,53 @@ html {
   letter-spacing: -3px;
 }
 
+.xp-card-container {
+  padding-left: 10rem;
+}
+
+.xp-card {
+  position: relative;
+}
+
+.xp-card::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 40%;
+  left: -5.8rem;
+  position: absolute;
+}
+
+.xp-card::after {
+  content: '';
+  width: 3px;
+  height: 120%;
+  background: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: -5rem;
+}
+
+.xp-card:first-of-type::after {
+  top: 50%;
+}
+
+.xp-card:last-of-type::after {
+  height: 50%;
+}
+
+#experience {
+  background-color: #5D3FD3;
+}
+
+.white-font-color {
+  color: #fff;
+}
+
+
 /* 
 * {
   margin: 0;
