@@ -1,169 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="is-fixed-top">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Chrisen Galang | chrisen.dev</title>
 </head>
+
 <body>
-
-  <nav class="navbar is-fixed-top py-3" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand pl-3">
-        <h1 class="is-size-3 brand-font">chrisen.dev</h1>  
-        <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end has-text-centered-touch">
-          <a class="navbar-item" href="#home">
-            Home
-          </a>
-          <a class="navbar-item" href="#experience">
-            Experience
-          </a>
-          <a class="navbar-item" href="#skills">
-            Skills
-          </a>
-          <a class="navbar-item" href="#projects">
-            Projects
-          </a>
-          <a class="navbar-item" href="#contact">
-            Contact
-          </a>
-        </div>
-
-        <div class="navbar-end is-hidden-touch ">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button default-orange">
-                <strong>Hire Me</strong>
-              </a>
-            </div>
-          </div>
+  <div class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full backdrop-blur-md z-50 py-4 px-8">
+      <div class="flex items-center justify-between">
+        <div class="text-xl sm:text-2xl font-bold">Chrisen Galang</div>
+        <div class="hidden md:flex space-x-8">
+          <a class="hover:text-indigo-400 transition-colors" href="#">About</a>
+          <a class="hover:text-indigo-400 transition-colors" href="">Skills</a>
+          <a class="hover:text-indigo-400 transition-colors" href="#">Portfolio</a>
+          <a class="hover:text-indigo-400 transition-colors" href="#">Contact</a>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="hero has-text-centered mt-6" id="home">
-    <div class="hero-body">
-      <h1 class="is-size-1 has-text-weight-bold">Hi! I'm Chrisen Galang, a Software Developer.</h1>
-      <h2 class="is-size-6">Backend | Frontend | Fullstack</h2>
-    </div>
-  </section>
+    <!-- Hero -->
 
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="content">
-        <h3 class="has-text-weight-bold is-size-2 has-text-white has-text-centered">Experience</h3>
-      </div>
-    </div>
-    <div class="container xp-card-container">
-      <div class="card xp-card">
-        <div class="card-content">
-          <p class="title is-size-4">Fullstack Software Engineer</p>
-          <p class="subtitle">Manulife IT Delivery Center</p>
-          <div class="content">
-            <p>
-              Enhance and maintain backend microservices for Manulife Philippines agent portal and Manulife Bank Canada. Work with a cross-functional agile team with frontend and backend developers, quality engineers, business analyst and product owners. One of the lead developers for migration of services from Pivotal Cloud to Microsoft Azure.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card xp-card">
-        <div class="card-content">
-          <p class="title is-size-4">Java Engineer</p>
-          <p class="subtitle">ING Business Shared Services</p>
-          <div class="content">
-            <p>
-              Built a Spring Batch application for the ingestion of name screening data used for ING Philippines' digital bank KYC process. Implemented enhancements to the check deposit module of the bank.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card xp-card">
-        <div class="card-content">
-          <p class="title is-size-4">Applications Developer</p>
-          <p class="subtitle">TELUS International Philippines</p>
-          <div class="content">
-            <p>
-              Developed a consent management API that allows TELUS customers to seamlessly opt-in or out for marketing initiatives and data analytics-driven communications for product upsell.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card xp-card">
-        <div class="card-content">
-          <p class="title is-size-4">Software Developer</p>
-          <p class="subtitle">UST Global Philippines</p>
-          <div class="content">
-            <p>
-              Enhancement and maintenance of the Coupon Management System web application for HEB Texas. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="content">
-        <h3 class="has-text-weight-bold is-size-2 has-text-centered">Skills</h3>
-      </div>
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="content">
-            <h3 class="has-text-centered has-text-weight-bold">Backend</h3>
-            <p class="has-text-centered is-size-1">
-              <i class='bx bxl-java'></i>
-              <i class='bx bxl-spring-boot' ></i>
-              <i class='bx bxl-nodejs' ></i>
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <h3 class="has-text-centered has-text-weight-bold">Frontend</h3>
-            <p class="has-text-centered is-size-1">
-              <i class='bx bxl-html5' ></i>
-              <i class='bx bxl-css3' ></i>
-              <i class='bx bxl-react' ></i>
-              <i class='bx bxl-angular' ></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- About Me -->
 
-  <!-- <section class="section" id="projects">
-    <div class="container">
-      <div class="content">
-        <h3 class="has-text-weight-bold is-size-2 has-text-centered has-text-white">Projects</h3>
-      </div>
-    </div>
-  </section> -->
+    <!-- Skills -->
 
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        Website built using <strong>Bulma.io</strong>
-      </p>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+    <!-- Projects -->
+
+    <!-- Contact -->
+
+    <!-- Footer -->
+  </div>
 </body>
+
 </html>
