@@ -9,25 +9,59 @@
   <title>Chrisen Galang | chrisen.dev</title>
 </head>
 
-<body>
+<body id="home">
   <div class="min-h-screen">
+
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full backdrop-blur-md z-50 py-4 px-8">
-      <div class="flex items-center justify-between">
-        <div class="text-xl sm:text-2xl font-bold">Chrisen Galang</div>
-        <div class="hidden md:flex space-x-8">
-          <a class="hover:text-indigo-400 transition-colors" href="#">About</a>
-          <a class="hover:text-indigo-400 transition-colors" href="">Skills</a>
-          <a class="hover:text-indigo-400 transition-colors" href="#">Portfolio</a>
-          <a class="hover:text-indigo-400 transition-colors" href="#">Contact</a>
-        </div>
+    <nav class="fixed top-0 w-full z-50 py-8 px-8 text-black font-extrabold">
+      <div class="absolute top-0 left-0 bg-indigo-800 w-full h-2"></div>
+      <div class="md:flex space-x-8 text-3xl w-full justify-center gap-5">
+        <a class="relative group p-2" href="#">
+          <span
+            class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
+          <span>Home</span>
+        </a>
+        <a class="relative group p-2" href="#about">
+          <span
+            class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
+          <span>About</span>
+        </a>
+        <a class="relative group p-2" href="#">
+          <span
+            class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
+          <span>Skills</span>
+        </a>
+        <a class="relative group p-2" href="#">
+          <span
+            class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
+          <span>Portfolio</span>
+        </a>
+        <a class="relative group p-2" href="#">
+          <span
+            class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
+          <span>Contact</span>
+        </a>
       </div>
     </nav>
 
     <!-- Hero -->
-
+    <div class="px-40 mt-25">
+      <section class="px-10 py-10">
+        <div class="flex justify-center mb-20">
+          <div class="w-70 h-70 border-5 border-black rounded-full overflow-hidden">
+            <img class="object-cover" src="./img/portrait.jpg">
+          </div>
+        </div>
+        <div class="text-5xl font-extrabold text-center">Hey there! I'm <span class="text-indigo-600">Chrisen
+            Galang</span>, a
+          software engineer who loves bringing ideas to life through code. Let's build something awesome together.</div>
+      </section>
+    </div>
 
     <!-- About Me -->
+    <div id="about">
+
+    </div>
 
     <!-- Skills -->
 
