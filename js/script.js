@@ -1,11 +1,9 @@
 function scrollTrigger() {
   const div = document.getElementById('navbackground')
   const menuTexts = document.getElementsByClassName('menu-text')
-  const rect = div.getBoundingClientRect()
+  const scrollY = window.scrollY;
 
-  console.log(`RectTop ${rect.top} Window height ${window.innerHeight} RectBottom ${rect.bottom}`)
-
-  if (rect.top < window.innerHeight && rect.bottom >= 0) {
+  if (scrollY > 50) {
     div.classList.remove('h-2')
     div.classList.add('h-full')
 
@@ -17,6 +15,11 @@ function scrollTrigger() {
   } else {
     div.classList.remove('h-full')
     div.classList.add('h-2')
+
+    for (let text of menuTexts) {
+      text.classList.remove('text-white')
+      text.classList.add('text-black')
+    }
   }
 }
 
