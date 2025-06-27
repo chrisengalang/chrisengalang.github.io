@@ -3,7 +3,7 @@ function scrollTrigger() {
   const menuTexts = document.getElementsByClassName('menu-text')
   const scrollY = window.scrollY;
 
-  if (scrollY > 50) {
+  if (scrollY > 10) {
     div.classList.remove('h-2')
     div.classList.add('h-full')
 

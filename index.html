@@ -9,12 +9,12 @@
   <title>Chrisen Galang | chrisen.dev</title>
 </head>
 
-<body id="home">
+<body id="home" class="bg-slate-50 scroll-pt-32">
   <div class="min-h-screen">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 py-8 px-8 font-extrabold">
-      <div id="navbackground" class="absolute top-0 left-0 bg-indigo-800 w-full h-2 transition-all duration-500"></div>
+      <div id="navbackground" class="absolute top-0 left-0 bg-gradient-to-r from-indigo-800 to-indigo-500 w-full h-2 transition-all duration-500"></div>
       <div class="md:flex space-x-8 text-3xl w-full justify-center gap-5">
         <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#">
           <span
@@ -26,17 +26,17 @@
             class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
           <span>About</span>
         </a>
-        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#">
+        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#skills">
           <span
             class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
           <span>Skills</span>
         </a>
-        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#">
+        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#portfolio">
           <span
             class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
           <span>Portfolio</span>
         </a>
-        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#">
+        <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#contact">
           <span
             class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
           <span>Contact</span>
@@ -45,31 +45,99 @@
     </nav>
 
     <!-- Hero -->
-    <div class="px-40 mt-30">
-      <section class="px-10 py-10">
-        <div class="flex justify-center mb-20">
-          <div class="w-70 h-70 border-5 border-black rounded-full overflow-hidden">
-            <img class="object-cover" src="./img/portrait.jpg">
-          </div>
+    <section class="px-100 py-10 mt-30 mb-10">
+      <div class="flex justify-center mb-15">
+        <div class="w-70 h-70 border-5 border-black rounded-full overflow-hidden">
+          <img class="object-cover" src="./img/portrait.jpg">
         </div>
-        <div class="text-5xl font-extrabold text-center">Hey there! I'm <span class="text-indigo-600">Chrisen
-            Galang</span>, a
-          software engineer who loves bringing ideas to life through code. Let's build something awesome together.</div>
-      </section>
-    </div>
+      </div>
+      <div class="text-6xl font-extrabold text-center">Hey there! I'm <span class="text-indigo-600">Chrisen
+          Galang</span>, a
+        software engineer who loves bringing ideas to life through code. Let's build something awesome together.</div>
+    </section>
 
     <!-- About Me -->
-    <div id="about">
-
-    </div>
+    <section id="about" class="bg-gradient-to-r from-indigo-800 to-indigo-600 py-20 px-100 text-white font-medium">
+      <div class="flex justify-center mb-10">
+        <div class="section-header font-extrabold text-5xl relative pb-4 flex justify-center">
+          <h2 class="mb-2">About me</h2>
+          <span class="h-2 w-50 absolute bottom-0 block !bg-indigo-400"></span>
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="flex-1 text-3xl p-3 text-right">
+          <p>With over 11 years of experience building the technology behind websites and apps, I'm passionate about turning ideas into reality. I love exploring new tools and creative solutions, and I'm always excited to help others bring their visions to life.</p>
+        </div>
+        <div class="flex-1 p-3">
+          <div class="space-y-8 flex flex-col items-left">
+            <div class="flex items-start gap-4">
+              <span class="bg-indigo-900 h-24 w-24 rounded-md flex items-center justify-center">
+              </span>
+              <div class="flex-4">
+                <h3 class="text-2xl font-bold">Clean &amp; Testable Code</h3>
+                <p class="text-lg text-white/80">Readable, maintainable, and reliable code</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="bg-indigo-900 h-24 w-24 rounded-md flex items-center justify-center">
+              </span>
+              <div class="flex-4">
+                <h3 class="text-2xl font-bold">Industry Standards</h3>
+                <p class="text-lg text-white/80">Committed to proven best practices</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="bg-indigo-900 h-24 w-24 rounded-md flex items-center justify-center">
+              </span>
+              <div class="flex-4">
+                <h3 class="text-2xl font-bold">Problem Solving</h3>
+                <p class="text-lg text-white/80">Creative and effective solutions, fast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Skills -->
+    <section id="skills" class="bg-gradient-to-r from-indigo-900 to-indigo-700 p-10 text-white">
+      <div class="flex justify-center">
+        <div class="section-header font-extrabold text-5xl relative pb-4 flex justify-center">
+          <h2 class="mb-2">Skills</h2>
+          <span class="h-2 w-50 absolute bottom-0 block !bg-indigo-400"></span>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects -->
+    <section id="projects" class="p-10 text-black">
+      <div class="flex justify-center">
+        <div class="section-header font-extrabold text-5xl relative pb-4 flex justify-center">
+          <h2 class="mb-2">Projects</h2>
+          <span class="h-2 w-50 absolute bottom-0 block !bg-indigo-400"></span>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact -->
+    <section id="contact" class="bg-indigo-800 p-10 text-white">
+      <div class="flex justify-center">
+        <div class="section-header font-extrabold text-5xl relative pb-4 flex justify-center">
+          <h2 class="mb-2">Contact</h2>
+          <span class="h-2 w-50 absolute bottom-0 block !bg-indigo-400"></span>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
+    <section id="contact" class="bg-indigo-800 p-10 text-white">
+      <div class="flex justify-center">
+        <div class="section-header font-extrabold text-5xl relative pb-4 flex justify-center">
+          <h2 class="mb-2">Contact</h2>
+          <span class="h-2 w-50 absolute bottom-0 block !bg-indigo-400"></span>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="/js/script.js"></script>
 </body>
