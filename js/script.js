@@ -3,12 +3,6 @@ function scrollTrigger() {
   const menuTexts = document.getElementsByClassName('menu-text')
   const burgerLines = document.getElementsByClassName('burger-line')
   const scrollY = window.scrollY;
-  const burger = document.getElementById('burger');
-  const navlinks = document.getElementById('navlinks');
-
-  navlinks.classList.add('hidden');
-  navlinks.classList.remove('flex');
-  burger.setAttribute('aria-expanded', 'false');
 
   if (scrollY > 10) {
     div.classList.remove('h-2')
