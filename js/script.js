@@ -1,13 +1,27 @@
-const burger = document.querySelector('#burger');
-const navbar = document.querySelector('#nav-links');
-const navItem = document.getElementsByClassName('navbar-item');
+function scrollTrigger() {
+  const div = document.getElementById('navbackground')
+  const menuTexts = document.getElementsByClassName('menu-text')
+  const scrollY = window.scrollY;
 
-burger.addEventListener('click', () => {
-  navbar.classList.toggle('is-active');
-})
+  if (scrollY > 10) {
+    div.classList.remove('h-2')
+    div.classList.add('h-full')
 
-navItem.forEach((item) => {
-  item.addEventListener('click', () => {
-    navbar.classList.remove('is-active');
-  })
-})
+    for (let text of menuTexts) {
+      text.classList.remove('text-black')
+      text.classList.add('text-white')
+    }
+
+  } else {
+    div.classList.remove('h-full')
+    div.classList.add('h-2')
+
+    for (let text of menuTexts) {
+      text.classList.remove('text-white')
+      text.classList.add('text-black')
+    }
+  }
+}
+
+window.addEventListener('scroll', () => scrollTrigger())
+
