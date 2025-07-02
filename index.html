@@ -18,13 +18,13 @@
       <div id="navbackground" class="absolute top-0 left-0 bg-gradient-to-r from-indigo-800 to-indigo-600 w-full h-2 transition-all duration-500"></div>
       <div class="flex items-center justify-between w-full max-w-7xl mx-auto">
         <!-- Burger Button -->
-        <button id="burger" class="md:hidden flex flex-col justify-center items-center w-12 h-12 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400 group bg-indigo-800 bg-opacity-90 border border-indigo-900 shadow-lg z-50" aria-label="Open navigation" aria-expanded="false">
-          <span class="block w-8 h-1 bg-white mb-1.5 rounded transition-all duration-300 group-aria-expanded:rotate-45 group-aria-expanded:translate-y-2"></span>
-          <span class="block w-8 h-1 bg-white mb-1.5 rounded transition-all duration-300 group-aria-expanded:opacity-0"></span>
-          <span class="block w-8 h-1 bg-white rounded transition-all duration-300 group-aria-expanded:-rotate-45 group-aria-expanded:-translate-y-2"></span>
+        <button id="burger" class="md:hidden flex flex-col justify-center items-center w-12 h-12 rounded focus:outline-none group z-50" aria-label="Open navigation" aria-expanded="false">
+          <span class="block w-8 h-1 bg-indigo-800 mb-1.5 rounded transition-all duration-300 group-aria-expanded:rotate-45 group-aria-expanded:translate-y-2 burger-line"></span>
+          <span class="block w-8 h-1 bg-indigo-800 mb-1.5 rounded transition-all duration-300 group-aria-expanded:opacity-0 burger-line"></span>
+          <span class="block w-8 h-1 bg-indigo-800 rounded transition-all duration-300 group-aria-expanded:-rotate-45 group-aria-expanded:-translate-y-2 burger-line"></span>
         </button>
         <!-- Nav Links -->
-        <div id="navlinks" class="hidden md:flex space-x-8 text-3xl w-full justify-center gap-5 bg-indigo-900 bg-opacity-95 md:bg-transparent absolute md:static top-20 left-0 right-0 md:top-auto md:left-auto md:right-auto p-8 md:p-0 flex-col md:flex-row items-center md:items-center shadow-lg md:shadow-none z-40 rounded-xl md:rounded-none text-center">
+        <div id="navlinks" class="hidden md:flex space-x-8 text-3xl w-full justify-center gap-5 bg-gradient-to-r from-indigo-800 to-indigo-600 absolute md:static top-28 left-0 right-0 md:top-auto md:left-auto md:right-auto p-8 md:p-0 flex-col md:flex-row items-center md:items-center shadow-lg md:shadow-none z-40 md:rounded-none text-center">
           <a class="relative group p-2 hover:text-white transition-all duration-900 menu-text" href="#">
             <span class="absolute left-0 top-0 h-full z-[-1] w-0 bg-indigo-800 transition-all duration-400 group-hover:w-full"></span>
             <span>Home</span>
@@ -227,29 +227,6 @@
     </section>
   </div>
   <script src="/js/script.js"></script>
-  <script>
-    // Responsive burger menu logic
-    const burger = document.getElementById('burger');
-    const navlinks = document.getElementById('navlinks');
-    if (burger && navlinks) {
-      burger.addEventListener('click', () => {
-        const expanded = burger.getAttribute('aria-expanded') === 'true';
-        burger.setAttribute('aria-expanded', !expanded);
-        navlinks.classList.toggle('hidden');
-        navlinks.classList.toggle('flex');
-      });
-      // Close menu on link click (mobile)
-      navlinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          if (window.innerWidth < 768) {
-            navlinks.classList.add('hidden');
-            navlinks.classList.remove('flex');
-            burger.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    }
-  </script>
 </body>
 
 </html>
